@@ -17,6 +17,7 @@
 </head>
 
 <body>
+  <div class="reading-progress" aria-hidden="true"><span id="readingProgress"></span></div>
   <div class="topline">
     <div class="container top-inner"><span>CBSE Affiliation No. 1730313</span><span>Jaipur Road, Tonk, Rajasthan · Est.
         1976</span><a href="#contact">Contact school ↗</a></div>
@@ -36,7 +37,11 @@
         <a href="#notices">Notices</a>
         <a href="#admissions">Admissions</a>
       </nav>
-      <button class="login-btn" id="loginOpen"><span>↗</span> Student login</button>
+      <div class="header-tools">
+        <button class="utility-btn" id="themeToggle" type="button" aria-label="Toggle colour theme" title="Toggle theme">☾</button>
+        <button class="utility-btn language-toggle" id="languageToggle" type="button" aria-label="Switch language">हिंदी</button>
+        <button class="login-btn" id="loginOpen"><span>↗</span> Student login</button>
+      </div>
     </div>
   </header>
 
@@ -69,6 +74,7 @@
         <button class="quick-item" id="quickLogin"><span class="quick-icon">⌘</span><span><b>Student
               portal</b><small>Your school, in one place</small></span><span class="arrow">↗</span></button>
       </div>
+      <div class="container school-now"><span class="now-pulse"></span><div><b>HAPPENING NOW</b><span id="schoolStatus">Preparing students for a future full of possibilities.</span></div><time id="localTime">Tonk, Rajasthan · --:--</time></div>
     </section>
 
     <section class="slide intro" id="about">
@@ -269,6 +275,10 @@
     </div>
   </footer>
 
+
+  <div class="command-backdrop" id="commandBackdrop" role="dialog" aria-modal="true" aria-label="Quick navigation">
+    <div class="command-panel"><div class="command-search"><span>⌕</span><input id="commandInput" type="search" placeholder="Search pages and sections..." autocomplete="off"><kbd>ESC</kbd></div><div class="command-results" id="commandResults"></div><small>Navigate quickly · Ctrl / ⌘ + K</small></div>
+  </div>
 
   <div class="slide-controls" aria-label="Slide navigation">
     <button type="button" class="slide-nav-btn" id="prevSlide" aria-label="Previous slide" disabled>←
