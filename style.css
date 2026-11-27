@@ -1702,3 +1702,131 @@ footer.slide.active {
     display: inline;
   }
 }
+
+body.dark-theme {
+  color-scheme: dark;
+  --cream: #1d2b39;
+  --ink: #e5edf5;
+  --muted: #aab8c5;
+  --line: #354657;
+  color: var(--ink);
+  background: #111e2b;
+}
+
+body.dark-theme .header,
+body.dark-theme .quick-strip,
+body.dark-theme .quick-item,
+body.dark-theme .intro,
+body.dark-theme .academics,
+body.dark-theme .notices,
+body.dark-theme .admissions,
+body.dark-theme .notice-list,
+body.dark-theme .portal-preview,
+body.dark-theme .login-modal {
+  background-color: #172635;
+  color: var(--ink);
+}
+
+body.dark-theme .header {
+  border-color: var(--line);
+}
+
+body.dark-theme .login-btn {
+  background: #1d2d3c;
+  border-color: var(--line);
+  color: var(--ink);
+}
+
+body.dark-theme .menu-toggle {
+  color: var(--ink);
+}
+
+body.dark-theme .header nav,
+body.dark-theme .brand strong,
+body.dark-theme .header nav a:hover,
+body.dark-theme .header nav a.active,
+body.dark-theme .quick-item b,
+body.dark-theme .intro-copy h2,
+body.dark-theme .section-heading h2,
+body.dark-theme .academic-card h3,
+body.dark-theme .academic-card>a,
+body.dark-theme .stats strong,
+body.dark-theme .text-link,
+body.dark-theme .notice-list h3,
+body.dark-theme .date-box,
+body.dark-theme .login-modal h2 {
+  color: var(--ink);
+}
+
+body.dark-theme .modal-close {
+  color: #b7c3cf;
+}
+
+body.dark-theme .quick-item {
+  border-color: var(--line);
+}
+
+body.dark-theme .quick-item:hover,
+body.dark-theme .academic-card.featured,
+body.dark-theme .notice-list,
+body.dark-theme .portal-mini-grid>div {
+  background-color: #1d2d3c;
+}
+
+body.dark-theme .lead,
+body.dark-theme .intro-copy>p:not(.lead),
+body.dark-theme .section-heading>p,
+body.dark-theme .academic-card p,
+body.dark-theme .stats span,
+body.dark-theme .notice-list p,
+body.dark-theme .login-modal>p,
+body.dark-theme .login-modal label {
+  color: #b7c3cf;
+}
+
+body.dark-theme .notice-list article,
+body.dark-theme .academic-cards,
+body.dark-theme .academic-card,
+body.dark-theme .stats-grid>div {
+  border-color: var(--line);
+}
+
+body.dark-theme .date-box,
+body.dark-theme .quick-icon {
+  background-color: #26394b;
+}
+
+body.dark-theme .portal-top {
+  border-color: var(--line);
+}
+
+body.dark-theme .login-modal input {
+  background: #111e2b;
+  border-color: var(--line);
+  color: var(--ink);
+}
+
+body.dark-theme .slide-controls {
+  background: rgba(18, 31, 44, .96);
+  border-color: var(--line);
+}
+
+body.dark-theme .slide-nav-btn {
+  background: #1d2d3c;
+  border-color: #405366;
+  color: var(--ink);
+}
+
+body.dark-theme .slide-nav-btn.next {
+  background: #d9ad62;
+  border-color: #d9ad62;
+  color: #17283b;
+}
+
+body.dark-theme .slide-status {
+  color: #b7c3cf;
+}
+
+body.dark-theme .slide-progress {
+  background: #354657;
+}

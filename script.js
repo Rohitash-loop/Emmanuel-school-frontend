@@ -294,6 +294,11 @@ const systemDark =
     window.matchMedia &&
     window.matchMedia("(prefers-color-scheme: dark)").matches;
 
+const initialTheme =
+    savedTheme === "dark" || savedTheme === "light"
+        ? savedTheme
+        : (systemDark ? "dark" : "light");
+
 function applyTheme(theme) {
 
     document.body.classList.toggle(
@@ -311,7 +316,7 @@ function applyTheme(theme) {
     );
 }
 
-applyTheme(savedTheme || (systemDark ? "dark" : "light"));
+applyTheme(initialTheme);
 
 themeToggle.addEventListener("click", () => {
 
